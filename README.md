@@ -1,10 +1,11 @@
-# Examen #3 Examen Práctico (Editando...)
+# Examen #2 Regularización
 ###### <sub> </sub>
 ## Contenido
 1. [Resumen](#Resumen) 
 2. [Cliente emisor](#Cliente-emisor)
 3. [Servidor](#Servidor)
-4. [Cliente receptor](#Cliente-receptor)
+4. [Página del juego](#Pagina)
+5. [Cliente receptor](#Cliente-receptor)
 
 # Resumen 
 <div align="justify">
