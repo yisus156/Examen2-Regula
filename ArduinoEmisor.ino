@@ -1,13 +1,11 @@
 // Arduino pin numbers
 const int X_pin = A0; // analog pin connected to X output
 const int Y_pin = A1; // analog pin connected to Y output
-const int sw_pin = 2; //analog pin connected to switch input
+const int sw_pin = 2; // digital pin connected to switch input
 const int tiempo_delay = 50; // Tiempo de delay despues de una lectura
 
 int Left;
 int Rigth;
-int Up;
-int Down;
 
 int switchState;
 int Direccion;
@@ -35,7 +33,7 @@ void loop() {
  
    if (digitalRead(sw_pin) == HIGH){
      
-      if(Up==0 && Down==0 && Rigth==1 && Left==0)
+      if(Rigth==1 && Left==0)
       {
         Direccion = 2; //DERECHA
         //Serial.println("DERECHA");
@@ -43,7 +41,7 @@ void loop() {
         delay(tiempo_delay);
       }
  
-      if(Up==0 && Down==0 && Rigth==0 && Left==1)
+      if(Rigth==0 && Left==1)
       {
         Direccion = 4; //IZQUIERDA
         //Serial.println("IZQUIERDA");
